@@ -351,12 +351,6 @@
   }
 }
 
-@media (width <=1023px) {
-  .gallery__container {
-    
-  }
-}
-
 @media (width <=767px) {
   .gallery__container {
     display: flex;
