@@ -216,13 +216,14 @@
   display: grid;
   grid-template-columns: 335px 649px;
   line-height: 23.4px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   padding-top: 20px;
 }
 
 @media (width <=1023px) {
   .content-section {
     grid-template-columns: 235px 472px;
+    justify-content: center;
     gap: 20px;
   }
 }
@@ -230,7 +231,6 @@
 @media (width <=767px) {
   .content-section {
     grid-template-columns: 355px;
-    justify-content: center;
     padding-top: 0;
   }
 }
@@ -254,6 +254,7 @@
 .heading__subtitle {
   display: grid;
   grid-template-columns: 315px;
+  margin-top: 60px;
 }
 
 @media (width <=1023px) {
@@ -264,9 +265,9 @@
 
 @media (width <=767px) {
   .heading__subtitle {
+    justify-content: center;
     grid-template-columns: 355px;
-    margin-top: -29px;
-    margin-left: -10px;
+    margin-top: 30px;
   }
 }
 
@@ -302,12 +303,21 @@
 }
 
 .title-decor.subtitle.subtitle-margin {
+  justify-content: center;
   margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+@media (width <=1023px) {
+  .title-decor.subtitle.subtitle-margin {
+    justify-content: center;
+  }
 }
 
 @media (width <=767px) {
   .title-decor.subtitle.subtitle-margin {
-    margin: -30px -10px 11px -10px;
+    margin-bottom: 11px;
+    margin-top: 30px;
   }
 }
 
@@ -335,11 +345,24 @@
 }
 
 @media (width <=767px) {
+  .gallery {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+@media (width <=1023px) {
+  .gallery__container {
+    
+  }
+}
+
+@media (width <=767px) {
   .gallery__container {
     display: flex;
     flex-direction: column;
-    margin: 0 -10px;
     gap: 10px;
+    margin-bottom: 40px;
   }
 }
 
@@ -419,12 +442,10 @@
 @media (width <=767px) {
   .footer__title {
     letter-spacing: -2.5px;
-    margin-top: 270px;
-    margin-bottom: 266.5px;
   }
 }
 
-.footer.decoroted-zone::after {
+.footer.decorated-zone::after {
   content: "";
   display: block;
   position: absolute;
@@ -448,6 +469,13 @@
   border-inline-start: 1px solid var(--accent-color);
   bottom: 20px;
   left: 20px;
+}
+
+@media (width <=767px) {
+  .footer.decorated-zone::after {
+    right: 10px;
+    top: 10px;
+  }
 }
 
 @media (width <=767px) {
